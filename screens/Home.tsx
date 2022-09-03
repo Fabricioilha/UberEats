@@ -14,7 +14,9 @@ const Home = () => {
   const [city, setCity] = useState("Rio de Janeiro")
   const [activeTab, setActiveTab] = useState("Delivery")
 
-  useEffect(()=>{getRestaurantsFromYelp()},[city])
+  useEffect(()=>{
+    getRestaurantsFromYelp()
+  },[city])
   
   const getRestaurantsFromYelp = async ()=>{
     const apiOptions = {    
